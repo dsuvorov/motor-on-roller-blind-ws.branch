@@ -2,9 +2,13 @@
 Fork from Nidayand version.
 
 Updates:
+
 2019.04.23  (v 1.5.1)Updated version working with ArduinoJson 6
+
 2019.04.23  (v 1.5.1)Customizable pin for motor connection
+
 2019.04.23  (v 1.5.1)Added a customizable button (not required) for clean config during startup, or to bring roller completely opened/closed
+
 WebSocket based version of [motor-on-roller-blind](https://github.com/nidayand/motor-on-roller-blind). I.e. there is no need of an MQTT server but MQTT is supported as well - you can control it with WebSockets and/or with MQTT messages.
 
 3d parts for printing are available on Thingiverse.com: ["motor on a roller blind"](https://www.thingiverse.com/thing:2392856)
