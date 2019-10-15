@@ -253,7 +253,7 @@ void handleNotFound(){
   server.send(404, "text/plain", message);
 }
 
-void buttonPressed() {
+void ICACHE_RAM_ATTR buttonPressed() {
   Serial.print("Button Pressed...\n"); 
   if (currentPosition == 0) {
     path = maxPosition;
@@ -294,15 +294,15 @@ void setup(void)
   //Setup WIFI Manager
   WiFiManager wifiManager;
   
-  if (!digitalRead(ButtonPin)) {  //long press for reset data...
-     delay(2000);
-     if (!digitalRead(ButtonPin)) {
-        Serial.println("Clean data and resetting...");
-        helper.resetsettings(wifiManager);
-        delay(300);
-        ESP.restart();
-     }
-  }
+//  if (!digitalRead(ButtonPin)) {  //long press for reset data...
+//     delay(2000);
+//     if (!digitalRead(ButtonPin)) {
+//        Serial.println("Clean data and resetting...");
+//        helper.resetsettings(wifiManager);
+//        delay(300);
+//        ESP.restart();
+//     }
+//  }
 
   //reset settings - for testing
   //clean FS, for testing
